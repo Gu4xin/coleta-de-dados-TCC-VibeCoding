@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurante - Massas Tradicionais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="cabecalho">
+        <h1>Restaurante</h1>
+        <p>A melhor massa da minha casa.</p>
+    </div>
+
+    <div id="conteudo-principal">
+        <h2>Nosso Prato Principal</h2>
+        <img id="img-destaque" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwS6dZeq_P33zyy19kE_tTL8UnUEXEJiW3hlzsIyf7mw&s=10" alt="Prato de Macarrão">
+        
+        <div id="area-pedido">
+            <h3>Faça seu pedido</h3>
+            <div class="form-grupo">
+                <label for="input-massa">Qual massa você deseja pedir?</label>
+                <br>
+                <input type="text" id="input-massa" placeholder="Ex: Espaguete">
+            </div>
+            
+            <button id="btn-pedir">Confirmar Pedido</button>
+            
+            <p id="mensagem-retorno"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

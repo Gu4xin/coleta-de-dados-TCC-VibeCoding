@@ -1,0 +1,76 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background-color: #050505;
+    color: #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    position: relative;
+    z-index: 2;
+}
+header { text-align: center; margin-bottom: 4rem; }
+.title {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #fff;
+}
+.highlight { color: #fbc02d; text-shadow: 0 0 20px rgba(251, 192, 45, 0.5); }
+.subtitle {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 10px;
+}
+.card {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    transition: transform 0.3s ease;
+}
+.card:hover { transform: translateY(-5px); border-color: #333; }
+.hero-img { width: 100%; height: 300px; object-fit: cover; opacity: 0.7; filter: grayscale(80%); transition: 0.3s; }
+.card:hover .hero-img { opacity: 1; filter: grayscale(30%); }
+.card-info { padding: 2.5rem; text-align: center; }
+.card-info h2 { color: #fbc02d; margin-bottom: 1rem; font-weight: 700; }
+.card-info p { color: #aaa; margin-bottom: 2rem; line-height: 1.6; }
+.btn-pro {
+    background: transparent;
+    color: #fbc02d;
+    border: 2px solid #fbc02d;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+.btn-pro:hover {
+    background: #fbc02d;
+    color: #000;
+    box-shadow: 0 0 20px rgba(251, 192, 45, 0.4);
+}
+#bat-signal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at 50% 30%, rgba(255, 255, 200, 0.15) 0%, rgba(0,0,0,0.9) 70%);
+    pointer-events: none;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+#bat-signal-overlay.active { opacity: 1; }
+@media (min-width: 768px) {
+    .card { flex-direction: row; }
+    .hero-img { width: 50%; height: auto; }
+    .card-info { width: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+}

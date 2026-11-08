@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Arte della Pasta | Ristorante</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">L'Arte della Pasta</div>
+        <ul class="nav-links">
+            <li><a href="#">La Storia</a></li>
+            <li><a href="#">Il Menu</a></li>
+            <li><a href="#">Prenota</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>A Autêntica Tradição Italiana</h1>
+            <p>Massas frescas, feitas à mão diariamente com ingredientes selecionados de Nápoles.</p>
+            <button id="explore-btn" class="btn-primary">Descubra o Menu</button>
+        </div>
+    </header>
+
+    <main class="menu-section">
+        <h2 class="section-title">I Nostri Piatti</h2>
+        <div class="pasta-grid">
+            <article class="pasta-card" data-pasta="carbonara">
+                <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?q=80&w=800&auto=format&fit=crop" alt="Spaghetti Carbonara">
+                <div class="card-content">
+                    <h3>Spaghetti alla Carbonara</h3>
+                    <p>Guanciale, pecorino romano, ovos e pimenta preta.</p>
+                </div>
+            </article>
+            
+            <article class="pasta-card" data-pasta="pesto">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=800&auto=format&fit=crop" alt="Penne al Pesto">
+                <div class="card-content">
+                    <h3>Penne al Pesto Genovese</h3>
+                    <p>Manjericão fresco, pinoli, alho, azeite e parmigiano.</p>
+                </div>
+            </article>
+
+            <article class="pasta-card" data-pasta="pomodoro">
+                <img src="https://images.unsplash.com/photo-1598866594230-a7c12756260f?q=80&w=800&auto=format&fit=crop" alt="Ravioli">
+                <div class="card-content">
+                    <h3>Ravioli di Ricotta</h3>
+                    <p>Massa recheada com ricota e espinafre ao sugo de tomate San Marzano.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <div id="recipe-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Prato</h2>
+            <p id="modal-desc">Descrição especial do chef.</p>
+            <p class="chef-note">"Buon appetito!"</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

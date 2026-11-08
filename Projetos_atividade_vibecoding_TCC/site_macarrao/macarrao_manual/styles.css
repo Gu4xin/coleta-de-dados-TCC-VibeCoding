@@ -1,0 +1,67 @@
+/* CSS Básico - Sem Flexbox ou Grid avançado */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho {
+    background-color: #228B22;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #B22222;
+}
+
+#conteudo-principal {
+    background-color: white;
+    width: 800px;
+    margin: 20px auto; /* Centraliza a div na tela */
+    padding: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+#img-destaque {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+#area-pedido {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.form-grupo {
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#btn-pedir {
+    background-color: #B22222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btn-pedir:hover {
+    background-color: #8B0000;
+}
+
+#mensagem-retorno {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
